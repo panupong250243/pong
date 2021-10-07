@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.6435-9/244460809_3138740649687334_7087043674249149171_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGtWF7UMUY-C-2sTL8FyoZDRLc75hfn--pEtzvmF-f76gGv8cySLY29sSOobQJMcZwk7wz_CY994Lbh7336EKgC&_nc_ohc=beCFUDhDVoAAX9fsLWB&_nc_ht=scontent.fbkk12-3.fna&oh=ab87dafcbd06d25e94e8006898c17107&oe=61834050");
+    background-size: cover;
+    background-position: center;
+  }
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .navBar .logo a {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .phuket {
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("https://scontent.fbkk12-2.fna.fbcdn.net/v/t1.6435-9/244468482_3138741106353955_7941153619766892826_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeE8ZhbnLKBx0SwQV6VQrjcnZeoUynRciANl6hTKdFyIA2ykWOIHgPajcM6wc7UCGUsl4iyxHiqxzxUT8rqThSxj&_nc_ohc=7IN0rx7pQI4AX8uoXXW&_nc_ht=scontent.fbkk12-2.fna&oh=0c9245aeb7c58b51db2ec55c9d7e7cb0&oe=6184946B");
+  }
+  .box2 {
+    background-image: url("https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.6435-9/244472837_3138741026353963_2932616415853727854_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeHPzRu8Q-qNcsBzZ6EpsE9R2JWbFcy4jlDYlZsVzLiOUGVGm9aeb2v4oc9ZGURGhtVz3JEf2t2VuMmcuGDH_qy7&_nc_ohc=QKzFXq1CkqYAX9QdeXI&_nc_ht=scontent.fbkk12-4.fna&oh=7a1b8c9710fac9d0140d2ad6ee0f6291&oe=6182F623");
+  }
+  .box3 {
+    background-image: url("https://media.discordapp.net/attachments/865450715626078263/894822808444604436/23250205.c7a9345213466c491d3e340c04533fd3.21100403.jpg?width=656&height=492");
+  }
+  .box4 {
+    background-image: url("https://media.discordapp.net/attachments/865450715626078263/894817552511955004/23250205.52b01b8aa086cd0813c785a1697be575.21100212.jpg?width=656&height=492");
+  }
+  .phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .phuket p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fae318;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+button a {
+   top: 2px;
+      border:solid 1px rgb(255, 255, 255);
+      background:none;
+      color:rgb(5, 5, 5);
+      font-size: 2.5rem;
+      padding:5px 15px;
+      margin:15px 0;
+      cursor: pointer;
+      display:center
+  }
+button a:hover{
+      background:#fff;
+      color:#000;
+
+  }
+  
